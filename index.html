@@ -186,7 +186,7 @@ function App(){
    <section id="create" className="mx-auto px-4 pb-16 grid lg:grid-cols-5 gap-8 items-start" style=${{maxWidth:1100}}>
     <div className="glass lg:col-span-2 p-6" style=${{display:'grid',gap:16}}>
      <h2 className="serif" style=${{fontSize:'1.5rem',margin:0}}>Write your story</h2>
-     <${Field} label="Your name" error=${err.me}><input className="fld" value=${f.me} onChange=${set('me')} placeholder=""/><//>
+     <${Field} label="His name" error=${err.me}><input className="fld" value=${f.me} onChange=${set('me')} placeholder=""/><//>
      <${Field} label="Her name" error=${err.her}><input className="fld" value=${f.her} onChange=${set('her')} placeholder=""/><//>
      <${Field} label="Relationship start date" error=${err.date}><input type="date" className="fld" max=${todayStr()} value=${f.date} onChange=${set('date')}/><//>
      <${Field} label="Days together (automatic)"><div className="fld flex items-center gap-2" style=${{fontWeight:600}}><${Icon} n="heart" s=${16} fill="currentColor" style=${{color:'var(--ac)'}}/>${el?html`${el.d} days · ${el.h}h ${el.m}m ${el.s}s`:html`<span style=${{color:'var(--mut)',fontWeight:400}}>Pick a start date</span>`}</div><//>
